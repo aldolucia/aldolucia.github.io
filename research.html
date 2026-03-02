@@ -4,6 +4,7 @@ use-site-title: false
 ---
 
 <head>
+  {% raw %}
   <style>
     /* Main styling */
     body {
@@ -33,31 +34,27 @@ use-site-title: false
       color: grey;
     }
 
-    /* For clickable items */
     a, .toggle-abstract {
       transition: color 0.3s ease;
       margin: 0;
       padding: 0;
-      display: inline;  /* Ensuring it's inline */
+      display: inline;
     }
 
     a:hover, .toggle-abstract:hover {
       color: darkblue;
     }
 
-    /* To emphasize your titles */
     p span {
       font-family: 'Georgia', serif;
     }
 
-    /* Added style for the hyperlink within parentheses */
     a.parenthesis-link {
         margin: 0;
         padding: 0;
-        display: inline;  /* Ensuring it's inline */
+        display: inline;
     }
-
-</style>
+  </style>
   
   <script>
     function toggleAbstract(id) {
@@ -69,6 +66,7 @@ use-site-title: false
       }
     }
   </script>
+  {% endraw %}
 </head>
 
 <body>
